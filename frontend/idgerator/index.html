@@ -99,22 +99,20 @@
                 return;
             }
             
-            // Generate random student ID (e.g., STU123456)
+            
             const randomID = 'STU' + Math.floor(Math.random() * 1000000).toString().padStart(6, '0');
             
-            // Display the result
+           
             const resultDiv = document.getElementById("result");
             resultDiv.innerHTML = `Student Name: ${name} <br> Student ID: ${randomID}`;
         }
 
         function goPrevious() {
-            // Logic for going to the previous page
-            window.history.back(); // Go back to the previous page in the browser's history
+            window.history.back();
         }
 
         function goNext() {
-            // Logic for going to the next page (you can update this to the next page URL)
-            window.location.href = "../certificateUp/index.html"; // Redirect to the next page (update "nextpage.html" with the actual URL)
+            window.location.href = "../certificateUp/index.html";
         }
     </script>
 
